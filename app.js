@@ -28,4 +28,8 @@ app.use((error, req, res, next) => {
     })
 })
 
-app.listen(5000);
+const PORT = 3000; // 예: 다른 포트로 변경
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
